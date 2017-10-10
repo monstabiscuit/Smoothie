@@ -277,11 +277,13 @@ zprobe.probe_height                          5               # How much above be
 leveling-strategy.rectangular-grid.enable     true
 leveling-strategy.rectangular-grid.x_size        200
 leveling-strategy.rectangular-grid.y_size        200
-leveling-strategy.rectangular-grid.size        7
-leveling-strategy.rectangular-grid.grid_x_size        7
-leveling-strategy.rectangular-grid.grid_y_size        7
-leveling-strategy.rectangular-grid.probe_offsets  27,9,0
+leveling-strategy.rectangular-grid.size        5
+leveling-strategy.rectangular-grid.grid_x_size        5
+leveling-strategy.rectangular-grid.grid_y_size        5
+leveling-strategy.rectangular-grid.probe_offsets  0,0,0
 mm_per_line_segment 1 # necessary for cartesians using rectangular-grid
+leveling-strategy.rectangular-grid.do_home         false
+
 
 ## Panel
 # See http://smoothieware.org/panel
