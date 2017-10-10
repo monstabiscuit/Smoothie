@@ -221,11 +221,11 @@ gamma_min_endstop                            nc               # Pin to read min 
 #gamma_max_endstop                           nc               # Pin to read max endstop, uncomment this and comment the above if using max endstops
 gamma_homing_direction                       home_to_min      # Or set to home_to_max and set alpha_max and uncomment the alpha_max_endstop
 gamma_min                                    0                # This gets loaded as the current position after homing when home_to_min is set
-gamma_max                                    200              # This gets loaded as the current position after homing when home_to_max is set
+gamma_max                                    150              # This gets loaded as the current position after homing when home_to_max is set
 
 alpha_max_travel                             215              # Max travel in mm for alpha/X axis when homing
 beta_max_travel                              205              # Max travel in mm for beta/Y axis when homing
-gamma_max_travel                             210              # Max travel in mm for gamma/Z axis when homing
+gamma_max_travel                             170              # Max travel in mm for gamma/Z axis when homing
 
 # Optional enable limit switches, actions will stop if any enabled limit switch is triggered
 #alpha_limit_enable                          false            # Set to true to enable X min and max limit switches
@@ -243,12 +243,6 @@ gamma_slow_homing_rate_mm_s                  2                # Gamma/Z slow hom
 alpha_homing_retract_mm                      5                # Distance to retract from the endstop after it is hit for alpha/X
 beta_homing_retract_mm                       5                # Distance to retract from the endstop after it is hit for beta/Y
 gamma_homing_retract_mm                      1                # Distance to retract from the endstop after it is hit for gamma/Z
-
-
-# Optional enable limit switches, actions will stop if any enabled limit switch is triggered (all are set for delta)
-#alpha_limit_enable                          false            # Set to true to enable X min and max limit switches
-#beta_limit_enable                           false            # Set to true to enable Y min and max limit switches
-#gamma_limit_enable                          false            # Set to true to enable Z min and max limit switches
 
 # Optional order in which axis will home, default is they all home at the same time,
 # If this is set it will force each axis to home one at a time in the specified order
@@ -275,8 +269,8 @@ zprobe.probe_height                          5               # How much above be
 # Levelling strategy
 
 leveling-strategy.rectangular-grid.enable     true
-leveling-strategy.rectangular-grid.x_size        200
-leveling-strategy.rectangular-grid.y_size        200
+leveling-strategy.rectangular-grid.x_size        160
+leveling-strategy.rectangular-grid.y_size        160
 leveling-strategy.rectangular-grid.size        5
 leveling-strategy.rectangular-grid.grid_x_size        5
 leveling-strategy.rectangular-grid.grid_y_size        5
